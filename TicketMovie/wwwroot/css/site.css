@@ -1,0 +1,48 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+<style >
+/* Thêm các quy tắc CSS tùy chỉnh ở đây */
+body {
+    background-color: #f8f9fa; /* Màu nền */
+}
+
+.navbar {
+    background-color: #343a40 !important; /* Màu thanh điều hướng */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff !important; /* Màu chữ trong thanh điều hướng */
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #17a2b8 !important; /* Màu chữ khi di chuột qua trong thanh điều hướng */
+    }
+
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}

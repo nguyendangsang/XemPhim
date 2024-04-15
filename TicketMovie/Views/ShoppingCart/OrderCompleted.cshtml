@@ -1,0 +1,48 @@
+﻿
+@model int
+
+<h1>Đặt hàng thành công</h1>
+<p>Mã đơn hàng: @Model</p>
+<p>Cảm ơn bạn đã đặt hàng!</p>
+
+@* @model int
+
+<h1>Order Completed</h1>
+
+<p>Your order has been received and is being processed. Your order details are below:</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.OrderDetails)
+        {
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>@item.Product.Price.ToString("C")</td>
+                <td>@item.Quantity</td>
+                <td>@(item.Product.Price * item.Quantity).ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" style="text-align:right"><strong>Total:</strong></td>
+            <td>@ViewBag.Total.ToString("C")</td>
+        </tr>
+    </tfoot>
+</table>
+
+<p>Your order will be shipped to:</p>
+<p><strong>@Model.ShippingAddress</strong></p>
+
+<p>Your notes:</p>
+<p><strong>@Model.Notes</strong></p>
+
+<p>Thank you for your order!</p> *@
